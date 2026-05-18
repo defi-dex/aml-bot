@@ -2166,11 +2166,5 @@ const observer=new IntersectionObserver(entries=>{
 document.querySelectorAll('section[id]').forEach(s=>observer.observe(s));
 </script>
   <script src="./modernizr-3.12.0.js" type="module"></script>
-  document.addEventListener('click', function(event) {
-    if (!event.target.closest('button, .btn, .btn-scan-primary, .btn-main-scan, .btn-fire, .wallet-opt, .chain-btn, .faq-trigger, .nav-hamburger, .social-btn')) {
-        return; // просто игнорируем клик, не отменяя его полностью
-    }
-    // ваш код, который должен выполняться по кнопкам (если вы его сюда перенесёте)
-});
 </body>
 </html>
